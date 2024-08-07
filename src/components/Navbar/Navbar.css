@@ -1,0 +1,26 @@
+.nav-wrapper{
+    position: sticky;
+    top: 0;
+    /* z-index: 99; */
+}
+
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 10px;
+
+}
+
+.nav-name{
+    color: #7E8185;
+    font-weight: 600;
+    /* font-family: SF Pro Text; */
+    margin-left: 5px;
+    
+}
+
+.hr-line{
+    color: #d1d1d1;
+    height: 1px;
+}
