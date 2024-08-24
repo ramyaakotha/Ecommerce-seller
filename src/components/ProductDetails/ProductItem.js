@@ -17,7 +17,7 @@ const ProductItem = ({ product, updateProduct, removeProduct, openPicker }) => {
     updateProduct({ ...product, variants: updatedVariants });
   };
 
-  console.log(product.id,'product id')
+  // console.log(product.id,'product id')
   return (
     <div>
       <div className='product-item-wrapper'>

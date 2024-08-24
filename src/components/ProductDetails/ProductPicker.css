@@ -27,3 +27,16 @@
     
 
 }
+
+
+.variant-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.var{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
