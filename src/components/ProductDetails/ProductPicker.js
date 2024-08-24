@@ -37,7 +37,7 @@ const ProductPicker = ({ isOpen, onClose, onSelect }) => {
         'x-api-key': apiKey
       }
     });
-    console.log(response,"response")
+    // console.log(response,"response")
     setProducts(prev => [...prev, ...response.data]);
   };
 
@@ -182,7 +182,7 @@ const ProductPicker = ({ isOpen, onClose, onSelect }) => {
                   key={variant.id}
                   style={{ marginLeft: "20px", padding: "10px" }}
                 >
-                  <label>
+                  <label className="var">
                     <input
                       type="checkbox"
                       checked={!!selectedProducts[product.id]?.[variant.id]}
@@ -191,7 +191,15 @@ const ProductPicker = ({ isOpen, onClose, onSelect }) => {
                       }
                       style={{ accentColor: "rgba(0, 128, 96, 1)" }}
                     />
-                    {variant.title} - ${variant.price}
+                    <span className="variant-details">
+                      <span className="name">
+                      {variant.title}
+                      </span>
+                      <span className="price">
+                      ${variant.price}
+                      </span>
+                    </span>
+                    
                     <hr></hr>
                   </label>
                 </div>

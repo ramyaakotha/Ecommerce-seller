@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <nav className="nav-wrapper">
         <div className="nav-content">
-          <img src={logo}></img>
-         <p className='nav-name'> Monk Upsell & Cross-sell</p>
+          <img src={logo} alt='logo'></img>
+         <p className='nav-name'>E-com Seller</p>
         </div>
         <hr className='hr-line'></hr>
       </nav>
